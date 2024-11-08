@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Share Chat",
+  "version": "1.0",
+  "description": "Share your Claude chat conversations as static HTML files",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
